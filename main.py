@@ -27,7 +27,7 @@ def server():
     try:
         while True:
             # This is a blocking task that waits for connections.
-            client_connection, client_address = server_socket.accept()
+            client_connection, _ = server_socket.accept()
 
             request = client_connection.recv(1024).decode()
             emit_message(request, "CONNECTION")
