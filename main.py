@@ -9,6 +9,7 @@ def emit_message(request_data, type="CONNECTION"):
         print("NEW CONNECTION MADE".center(20, "#"))
         print()
 
+        print()
         print(request_data)
         print()
 
